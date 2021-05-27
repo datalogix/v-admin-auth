@@ -1,0 +1,48 @@
+{
+  "name": "@datalogix/v-admin-auth",
+  "version": "0.0.1",
+  "description": "Authentication module for @datalogix/v-admin",
+  "repository": "datalogix/v-admin-auth",
+  "license": "MIT",
+  "author": "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>",
+  "main": "./dist/v-admin-auth.common.js",
+  "unpkg": "./dist/v-admin-auth.umd.js",
+  "jsdelivr": "./dist/v-admin-auth.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib src/index.js",
+    "lint": "vue-cli-service lint",
+    "test": "npm run lint",
+    "release": "npm run test && npm run build-lib && standard-version && git push --follow-tags && npm publish"
+  },
+  "peerDependencies": {
+    "@datalogix/v-admin": "*"
+  },
+  "dependencies": {
+    "defu": "^5.0"
+  },
+  "devDependencies": {
+    "@datalogix/v-admin": "^0.0.22",
+    "@vue/cli-plugin-babel": "^4.5",
+    "@vue/cli-plugin-eslint": "^4.5",
+    "@vue/cli-service": "^4.5",
+    "@vue/compiler-sfc": "^3.0",
+    "babel-eslint": "^10.1",
+    "eslint": "^7.27",
+    "eslint-config-airbnb": "^18.2",
+    "eslint-config-standard": "^16.0",
+    "eslint-plugin-import": "^2.23",
+    "eslint-plugin-node": "^11.1",
+    "eslint-plugin-promise": "^5.1",
+    "eslint-plugin-vue": "^7.9",
+    "standard-version": "^9.3",
+    "vue": "^3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
