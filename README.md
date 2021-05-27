@@ -47,6 +47,10 @@ createAdmin({
 2. Install dependencies using `yarn install` or `npm install`
 3. Start development server using `yarn serve` or `npm run serve`
 
+## Roadmap v1
+
+- Refactor using v-auth (new vue package for authentication like [auth-module](https://github.com/nuxt-community/auth-module))
+
 ## License
 
 [MIT License](./LICENSE)
