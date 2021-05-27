@@ -28,7 +28,7 @@ npm install @datalogix/v-admin-auth --save
 
 ```js
 import { createAdmin } from '@datalogix/v-admin'
-import { createAuthModule } from '@datalogix/v-admin-auth
+import { createAuthModule } from '@datalogix/v-admin-auth'
 
 createAdmin({
   modules: [
