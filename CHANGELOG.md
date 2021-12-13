@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/datalogix/v-admin-auth/compare/v0.0.4...v0.0.5) (2021-12-13)
+
+
+### Bug Fixes
+
+* fetch user ([787cc04](https://github.com/datalogix/v-admin-auth/commit/787cc0448273acaac19f0e904c2ce363d92c7b5f))
+
 ### [0.0.4](https://github.com/datalogix/v-admin-auth/compare/v0.0.3...v0.0.4) (2021-12-13)
 
 
