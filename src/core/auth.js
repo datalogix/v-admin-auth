@@ -92,6 +92,9 @@ export class Auth {
       .then((result) => {
         this.setUser(result)
       })
+      .catch(() => {
+        this.setUser(null)
+      })
   }
 
   fetchUserOnce (...args) {
