@@ -1,12 +1,12 @@
 <template>
   <form method="post" @submit.prevent="submit">
     <AdminField label="Nova senha">
-      <Password v-model="form.password" toggleMask class="w-full" />
+      <Password v-model="form.password" toggleMask class="w-full" autocomplete="new-password" />
     </AdminField>
     <AdminField label="Confirme a nova senha">
-      <Password v-model="form.password_confirmation" toggleMask class="w-full" />
+      <Password v-model="form.password_confirmation" toggleMask class="w-full" autocomplete="new-password" />
     </AdminField>
-    <Button type="submit" label="Alterar senha" :loading="loading" />
+    <AdminButton type="submit" label="Alterar senha" :loading="loading" />
   </form>
 </template>
 

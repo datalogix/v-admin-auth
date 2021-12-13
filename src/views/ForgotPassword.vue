@@ -4,13 +4,13 @@
       <InputText v-model="form.username" />
     </AdminField>
     <div class="flex flex-col lg:flex-row-reverse space-y-4 lg:space-y-0 items-center justify-between">
-      <Button
+      <AdminButton
         type="submit"
         icon="pi pi-send"
         label="Esqueci minha senha"
         :loading="loading"
       />
-      <Button
+      <AdminButton
         v-if="$auth.options.routes.login.enabled"
         @click="$admin.visit({ name: $auth.options.routes.login.name })"
         label="Voltar"
@@ -23,9 +23,14 @@
 
 <script>
 import { ref, reactive } from 'vue'
+import InputText from 'primevue/inputtext'
 import { useAuth } from '@/'
 
 export default {
+  components: {
+    InputText
+  },
+
   setup () {
     const auth = useAuth()
     const loading = ref(false)
