@@ -1,6 +1,6 @@
 {
   "name": "@datalogix/v-admin-auth",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Authentication module for @datalogix/v-admin",
   "repository": "datalogix/v-admin-auth",
   "license": "MIT",
