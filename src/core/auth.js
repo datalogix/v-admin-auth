@@ -13,7 +13,7 @@ export class Auth {
 
   state () {
     const $state = toRefs(reactive({
-      user: null
+      user: this.admin.options.user
     }))
 
     Object.assign(this, $state)
@@ -54,7 +54,7 @@ export class Auth {
   }
 
   setUser (user = null) {
-    this.$state.user = user
+    this.$state.user.value = user
     this.admin.setUser(user)
   }
 
@@ -95,7 +95,7 @@ export class Auth {
   }
 
   fetchUserOnce (...args) {
-    return this.$state.user
+    return this.$state.user.value
       ? Promise.resolve()
       : this.fetchUser(...args)
   }
